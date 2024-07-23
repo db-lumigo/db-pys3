@@ -1,1 +1,2 @@
 boto3
+lumigo_tracer

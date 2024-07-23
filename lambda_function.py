@@ -1,6 +1,8 @@
 import boto3
 import os
+from lumigo_tracer import lumigo_tracer
 
+@lumigo_tracer()
 def lambda_handler(event, context):
     s3 = boto3.client('s3')
     bucket_name = os.environ['BUCKET_NAME']
